@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794603336210,
+  "lastUpdate": 1794603344968,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -735505,54 +735505,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "96085550+vazois@users.noreply.github.com",
-            "name": "Vasileios Zois",
-            "username": "vazois"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "62281b6563a975cd260a33b841ec8f1aaec6608c",
-          "message": "update docs for CLUSTER FAILOVER (#2291)",
-          "timestamp": "2026-10-23T16:34:44-07:00",
-          "tree_id": "232fd3c090a658d93beb6014ca8386b6034be7fa",
-          "url": "https://github.com/microsoft/garnet/commit/62281b6563a975cd260a33b841ec8f1aaec6608c"
-        },
-        "date": 1792798713018,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
-            "value": 126431.59378255208,
-            "unit": "ns",
-            "range": "± 382.664800556665"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
-            "value": 63876.954563685824,
-            "unit": "ns",
-            "range": "± 153.24785840492282"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
-            "value": 168004.33209635416,
-            "unit": "ns",
-            "range": "± 592.3289712505332"
-          },
-          {
-            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
-            "value": 118455.8709391276,
-            "unit": "ns",
-            "range": "± 291.5195059719419"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "napoli.tiago96@gmail.com",
             "name": "Tiago Nápoli",
             "username": "tiagonapoli"
@@ -737899,6 +737851,54 @@ window.BENCHMARK_DATA = {
             "value": 60229.41161237444,
             "unit": "ns",
             "range": "± 439.69013968943165"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "15467143+TedHartMS@users.noreply.github.com",
+            "name": "Ted Hart",
+            "username": "TedHartMS"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f93d1e8fcbb2ca6b5098c619806dd105779e471",
+          "message": "Fix checkpoint file ranges in disk-based replica sync (#2382)",
+          "timestamp": "2026-11-13T12:51:48-08:00",
+          "tree_id": "a9894850630c942d289dfbd7b15e9c45b2b7ba54",
+          "url": "https://github.com/microsoft/garnet/commit/3f93d1e8fcbb2ca6b5098c619806dd105779e471"
+        },
+        "date": 1794603339602,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AAD)",
+            "value": 94617.38580729166,
+            "unit": "ns",
+            "range": "± 1422.857450698667"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: ACL)",
+            "value": 45132.013275146484,
+            "unit": "ns",
+            "range": "± 45.47330725499432"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: AOF)",
+            "value": 122615.53188852164,
+            "unit": "ns",
+            "range": "± 1221.4742061307627"
+          },
+          {
+            "name": "BDN.benchmark.Operations.TxnOperations.MultiExec(Params: None)",
+            "value": 87963.06202043805,
+            "unit": "ns",
+            "range": "± 495.0675150035906"
           }
         ]
       }
