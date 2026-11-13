@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794603321788,
+  "lastUpdate": 1794603336210,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -785323,36 +785323,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "kmontrose@microsoft.com",
-            "name": "kevin-montrose",
-            "username": "kevin-montrose"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8974fdcc74588593ca9a22d907c460347ce41318",
-          "message": "Fixes for Range Index and Vector Set migration and import validation (#2283)\n\n* reject manually migrated Vector Set and Range Indexes log records; validate that migrated vector set indexes are in the correct slot\n\n* reject Vector Set index records whose parameters would not pass VADD\n\n* tests for forged migration log records\n\n* remove pointer from public surface\n\n* fix tests\n\n* formatting\n\n* enforce the same id/value length requirements on the Garnet side as are in the DiskANN side of import_term\n\n* dropping indexes on Vector Sets which are in an importing state needs locking; bit of cleanup in task and channel management; fix tests for RI ACLs\n\n* address feedback\n\n* address feedback",
-          "timestamp": "2026-10-23T14:25:48-04:00",
-          "tree_id": "5f482b2547da0535c086e504f493decd37390443",
-          "url": "https://github.com/microsoft/garnet/commit/8974fdcc74588593ca9a22d907c460347ce41318"
-        },
-        "date": 1792780202670,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Network.BasicOperations.InlinePing(Params: None)",
-            "value": 88.69019428888957,
-            "unit": "ns",
-            "range": "± 0.7928411634843726"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "96085550+vazois@users.noreply.github.com",
             "name": "Vasileios Zois",
             "username": "vazois"
@@ -786817,6 +786787,36 @@ window.BENCHMARK_DATA = {
             "value": 87.93034894125802,
             "unit": "ns",
             "range": "± 1.0853089887300198"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "15467143+TedHartMS@users.noreply.github.com",
+            "name": "Ted Hart",
+            "username": "TedHartMS"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f93d1e8fcbb2ca6b5098c619806dd105779e471",
+          "message": "Fix checkpoint file ranges in disk-based replica sync (#2382)",
+          "timestamp": "2026-11-13T12:51:48-08:00",
+          "tree_id": "a9894850630c942d289dfbd7b15e9c45b2b7ba54",
+          "url": "https://github.com/microsoft/garnet/commit/3f93d1e8fcbb2ca6b5098c619806dd105779e471"
+        },
+        "date": 1794603331387,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Network.BasicOperations.InlinePing(Params: None)",
+            "value": 62.85339832305908,
+            "unit": "ns",
+            "range": "± 0.44684441285033283"
           }
         ]
       }
