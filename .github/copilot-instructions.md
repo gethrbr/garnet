@@ -240,7 +240,7 @@ To add a new Garnet server setting:
 1. Add property to `Options` class in `libs/host/Configuration/Options.cs` with `[Option]` attribute
 2. Add default value in `libs/host/defaults.conf`
 3. If needed in core code, add matching property to `GarnetServerOptions` (`libs/server/Servers/GarnetServerOptions.cs`) and map it in `Options.GetServerOptions()`
-4. Add tests in `test/Garnet.test/GarnetServerConfigTests.cs`
+4. Add tests in `test/standalone/Garnet.test/GarnetServerConfigTests.cs`
 
 ### Coding Style
 
