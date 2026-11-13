@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794603262757,
+  "lastUpdate": 1794603294125,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -733103,54 +733103,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "96085550+vazois@users.noreply.github.com",
-            "name": "Vasileios Zois",
-            "username": "vazois"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "62281b6563a975cd260a33b841ec8f1aaec6608c",
-          "message": "update docs for CLUSTER FAILOVER (#2291)",
-          "timestamp": "2026-10-23T16:34:44-07:00",
-          "tree_id": "232fd3c090a658d93beb6014ca8386b6034be7fa",
-          "url": "https://github.com/microsoft/garnet/commit/62281b6563a975cd260a33b841ec8f1aaec6608c"
-        },
-        "date": 1792798690999,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
-            "value": 1585.6206279167761,
-            "unit": "ns",
-            "range": "± 0.9669177435030202"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
-            "value": 1365.0144917414739,
-            "unit": "ns",
-            "range": "± 0.6130918140678753"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
-            "value": 1404.9818786621095,
-            "unit": "ns",
-            "range": "± 15.268323818990789"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
-            "value": 1343.7763674599785,
-            "unit": "ns",
-            "range": "± 6.218324829165581"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "napoli.tiago96@gmail.com",
             "name": "Tiago Nápoli",
             "username": "tiagonapoli"
@@ -735497,6 +735449,54 @@ window.BENCHMARK_DATA = {
             "value": 946.3012267000535,
             "unit": "ns",
             "range": "± 25.95487330399888"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "15467143+TedHartMS@users.noreply.github.com",
+            "name": "Ted Hart",
+            "username": "TedHartMS"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f93d1e8fcbb2ca6b5098c619806dd105779e471",
+          "message": "Fix checkpoint file ranges in disk-based replica sync (#2382)",
+          "timestamp": "2026-11-13T12:51:48-08:00",
+          "tree_id": "a9894850630c942d289dfbd7b15e9c45b2b7ba54",
+          "url": "https://github.com/microsoft/garnet/commit/3f93d1e8fcbb2ca6b5098c619806dd105779e471"
+        },
+        "date": 1794603291631,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
+            "value": 1039.0611445353582,
+            "unit": "ns",
+            "range": "± 6.355994446063028"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 933.4346513014573,
+            "unit": "ns",
+            "range": "± 15.482085308604107"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 954.0551886558533,
+            "unit": "ns",
+            "range": "± 17.880741062259734"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 925.833961230058,
+            "unit": "ns",
+            "range": "± 5.028280917235633"
           }
         ]
       }
