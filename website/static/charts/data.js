@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794603344968,
+  "lastUpdate": 1794603356484,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -786825,54 +786825,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "kmontrose@microsoft.com",
-            "name": "kevin-montrose",
-            "username": "kevin-montrose"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8974fdcc74588593ca9a22d907c460347ce41318",
-          "message": "Fixes for Range Index and Vector Set migration and import validation (#2283)\n\n* reject manually migrated Vector Set and Range Indexes log records; validate that migrated vector set indexes are in the correct slot\n\n* reject Vector Set index records whose parameters would not pass VADD\n\n* tests for forged migration log records\n\n* remove pointer from public surface\n\n* fix tests\n\n* formatting\n\n* enforce the same id/value length requirements on the Garnet side as are in the DiskANN side of import_term\n\n* dropping indexes on Vector Sets which are in an importing state needs locking; bit of cleanup in task and channel management; fix tests for RI ACLs\n\n* address feedback\n\n* address feedback",
-          "timestamp": "2026-10-23T14:25:48-04:00",
-          "tree_id": "5f482b2547da0535c086e504f493decd37390443",
-          "url": "https://github.com/microsoft/garnet/commit/8974fdcc74588593ca9a22d907c460347ce41318"
-        },
-        "date": 1792780190114,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
-            "value": 21972.20259446364,
-            "unit": "ns",
-            "range": "± 300.3136842913199"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
-            "value": 22954.642427884617,
-            "unit": "ns",
-            "range": "± 168.28221516722877"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
-            "value": 30279.544503348214,
-            "unit": "ns",
-            "range": "± 523.065218451865"
-          },
-          {
-            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
-            "value": 21828.818766276043,
-            "unit": "ns",
-            "range": "± 464.4236389965319"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "96085550+vazois@users.noreply.github.com",
             "name": "Vasileios Zois",
             "username": "vazois"
@@ -789219,6 +789171,54 @@ window.BENCHMARK_DATA = {
             "value": 43531.33036295573,
             "unit": "ns",
             "range": "± 294.495631115966"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "15467143+TedHartMS@users.noreply.github.com",
+            "name": "Ted Hart",
+            "username": "TedHartMS"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f93d1e8fcbb2ca6b5098c619806dd105779e471",
+          "message": "Fix checkpoint file ranges in disk-based replica sync (#2382)",
+          "timestamp": "2026-11-13T12:51:48-08:00",
+          "tree_id": "a9894850630c942d289dfbd7b15e9c45b2b7ba54",
+          "url": "https://github.com/microsoft/garnet/commit/3f93d1e8fcbb2ca6b5098c619806dd105779e471"
+        },
+        "date": 1794603348214,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AAD)",
+            "value": 22386.074829101562,
+            "unit": "ns",
+            "range": "± 259.80865594162344"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 22885.585334973457,
+            "unit": "ns",
+            "range": "± 784.1903561357481"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 29894.250957782453,
+            "unit": "ns",
+            "range": "± 240.72421830364362"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 22021.15718296596,
+            "unit": "ns",
+            "range": "± 327.66323196865636"
           }
         ]
       }
