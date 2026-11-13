@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794603428735,
+  "lastUpdate": 1794603443579,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -789227,54 +789227,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "96085550+vazois@users.noreply.github.com",
-            "name": "Vasileios Zois",
-            "username": "vazois"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "198293ecb422e70b9eb5f1941270d31f798636b9",
-          "message": "[Cluster] Fix stale offsets and write admission during primary failover (#2253)\n\n* fix stale replication offset bug for FAILOVER TO\n\n* introduce pause variable\n\n* ensure pauseWrites is logical and does not change the node role\n\n* fix race when running session misses primary to replica transition at FAILOVER\n\n* enforce no checkpoints during failover and ensure that config ref is updated when operations spin on write-pause\n\n* refresh snapshot on slot verification retry\n\n* ensure that FAILOVER forces writes to spinWait instead of blockin and affecting availability\n\n* register background failover task with TaskManager and hook-up timeout to FAILOVER command\n\n* mitigate waiter starvation through async await\n\n* fix cancellation clearing the pause after demotion\n\n* ensure primary tasks are suspended before failover initiates to capture AOF tail\n\n* ensure txn safety when flushdb executes while FAILOVER is running\n\n* ensure old primary initiates replication stream at FAILOVER success\n\n* ensure task cancellation targets only primary tasks for role changing operations\n\n* add regression test for REPLICA OF\n\n* fix build\n\n* ensure commits drain on CommitTask Suspension",
-          "timestamp": "2026-10-23T09:48:16-07:00",
-          "tree_id": "37dd5437d1a26e2869881327abcc1b02d2065408",
-          "url": "https://github.com/microsoft/garnet/commit/198293ecb422e70b9eb5f1941270d31f798636b9"
-        },
-        "date": 1792774425619,
-        "tool": "benchmarkdotnet",
-        "benches": [
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
-            "value": 1537.379493713379,
-            "unit": "ns",
-            "range": "± 13.000462261297999"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
-            "value": 1407.679489680699,
-            "unit": "ns",
-            "range": "± 9.397573390462501"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
-            "value": 1544.7940826416016,
-            "unit": "ns",
-            "range": "± 8.69583836028658"
-          },
-          {
-            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
-            "value": 1415.4893330165319,
-            "unit": "ns",
-            "range": "± 8.727916654570723"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "kmontrose@microsoft.com",
             "name": "kevin-montrose",
             "username": "kevin-montrose"
@@ -791621,6 +791573,54 @@ window.BENCHMARK_DATA = {
             "value": 1492.717640216534,
             "unit": "ns",
             "range": "± 9.721092138094615"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "15467143+TedHartMS@users.noreply.github.com",
+            "name": "Ted Hart",
+            "username": "TedHartMS"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f93d1e8fcbb2ca6b5098c619806dd105779e471",
+          "message": "Fix checkpoint file ranges in disk-based replica sync (#2382)",
+          "timestamp": "2026-11-13T12:51:48-08:00",
+          "tree_id": "a9894850630c942d289dfbd7b15e9c45b2b7ba54",
+          "url": "https://github.com/microsoft/garnet/commit/3f93d1e8fcbb2ca6b5098c619806dd105779e471"
+        },
+        "date": 1794603407852,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AAD)",
+            "value": 1716.9864654541016,
+            "unit": "ns",
+            "range": "± 10.280393190236714"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1461.714693705241,
+            "unit": "ns",
+            "range": "± 7.326196416468044"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1455.4228846232097,
+            "unit": "ns",
+            "range": "± 9.867348799994495"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1466.9307963053386,
+            "unit": "ns",
+            "range": "± 8.810269281133959"
           }
         ]
       }
